@@ -1,7 +1,3 @@
-This is a template for Go app with gom-managed deps
+gpgcli shortcuts I need for various project
 
-
-
-## Features
-
-* Makefile automatically generates version number from `git describe`, just add `var version string` in main section of your code to get it
+# DO NOT USE

@@ -7,9 +7,10 @@ import (
 
 func TestFingerprint(t *testing.T) {
 	g, _ := New()
-	out, err := g.GetFingerprint("some test print")
+	// TODO include some test gpg config
+	out, err := g.GetFingerprintById("a")
 	Convey("N", t, func() {
 		So(err, ShouldEqual, nil)
-		So(out, ShouldEqual, "some test fprint")
+		So(out, ShouldContainSubstring, "0")
 	})
 }
